@@ -1,11 +1,12 @@
 $color-white: #ffffff;
 $color-text: #333333;
-$color-gradient-start: #667eea;
-$color-gradient-end: #764ba2;
+$color-black: #000000;
+$color-button: #3b82f6;
+$color-button-hover: #2563eb;
 
 .container {
   min-height: 100vh;
-  background: linear-gradient(135deg, $color-gradient-start 0%, $color-gradient-end 100%);
+  background: $color-black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +20,7 @@ $color-gradient-end: #764ba2;
   width: 100%;
   max-width: 450px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   
   h1 {
     color: $color-text;
@@ -37,7 +38,7 @@ $color-gradient-end: #764ba2;
   transition: background-color 0.3s ease;
 }
 
-.botones-grid {
+.botones {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -50,15 +51,15 @@ $color-gradient-end: #764ba2;
   border-radius: 12px;
   font-size: 16px;
   font-weight: bold;
-  color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  background: $color-button;
+  color: $color-white;
   cursor: pointer;
-  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, background 0.2s;
   min-width: 100px;
   
   &:hover {
+    background: $color-button-hover;
     transform: scale(1.05);
-    opacity: 0.9;
   }
   
   &:active {
