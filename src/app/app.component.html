@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card">
+    <h1>Cambia el color del cuadrado</h1>
+    
+    <div class="cuadrado" [style.backgroundColor]="colorCuadrado"></div>
+    
+    <div class="botones">
+      <div class="botones-grid">
+        <div *ngFor="let boton of botones" class="button-wrapper">
+          <button 
+            class="btn" 
+            [style.backgroundColor]="boton.color"
+            (click)="cambiarColor(boton.color)">
+            {{ boton.text }}
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
