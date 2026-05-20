@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@angular-devkit/build-angular": "^15.2.11",
+    "@angular/cli": "^15.2.11",
     "@angular/common": "^15.2.10",
     "@angular/compiler": "^15.2.10",
     "@angular/compiler-cli": "^15.2.10",
